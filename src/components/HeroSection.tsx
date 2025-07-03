@@ -22,7 +22,9 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"%2300f5ff\" fill-opacity=\"0.03\"%3E%3Cpath d=\"M20 20L0 0v40l20-20zM40 0v40L20 20z\"/%3E%3C/g%3E%3C/svg%3E')] opacity-30"></div>
+        <div className="absolute inset-0 opacity-30" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2300f5ff' fill-opacity='0.03'%3E%3Cpath d='M20 20L0 0v40l20-20zM40 0v40L20 20z'/%3E%3C/g%3E%3C/svg%3E")`
+        }}></div>
       </div>
 
       {/* Floating Particles */}
