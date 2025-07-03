@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Github, Linkedin, Arrow } from 'lucide-react';
+import { Github, Linkedin, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -139,7 +139,7 @@ const ContactSection = () => {
                 className="w-full bg-gradient-to-r from-neon-cyan to-neon-blue hover:from-neon-blue hover:to-neon-cyan font-semibold py-3 hover:scale-105 transition-all"
               >
                 Send Message
-                <Arrow className="ml-2 h-5 w-5" />
+                <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </form>
           </div>

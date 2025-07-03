@@ -1,5 +1,5 @@
 
-import { Github, Arrow } from 'lucide-react';
+import { Github, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const ProjectsSection = () => {
@@ -117,7 +117,7 @@ const ProjectsSection = () => {
                       className="flex-1 bg-gradient-to-r from-neon-cyan to-neon-blue hover:from-neon-blue hover:to-neon-cyan group-hover:scale-105 transition-all"
                     >
                       Live Demo
-                      <Arrow className="ml-2 h-4 w-4 rotate-45" />
+                      <ArrowRight className="ml-2 h-4 w-4 rotate-45" />
                     </Button>
                   </div>
                 </div>
@@ -137,7 +137,7 @@ const ProjectsSection = () => {
             className="glass-effect border-neon-cyan text-neon-cyan hover:bg-neon-cyan hover:text-slate-900 px-8 py-4"
           >
             View All Projects
-            <Arrow className="ml-2 h-5 w-5" />
+            <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </div>
       </div>

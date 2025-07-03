@@ -1,5 +1,4 @@
-
-import { Book, Code, Arrow } from 'lucide-react';
+import { Book, Code, ArrowRight } from 'lucide-react';
 
 const AboutSection = () => {
   const achievements = [
