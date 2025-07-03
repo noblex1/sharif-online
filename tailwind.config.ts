@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,12 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				neon: {
+					cyan: '#00f5ff',
+					blue: '#0066cc',
+					purple: '#6366f1',
+					pink: '#ec4899'
 				}
 			},
 			borderRadius: {
@@ -84,11 +91,55 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'glow-pulse': {
+					'0%, 100%': {
+						boxShadow: '0 0 20px rgba(0, 245, 255, 0.3)'
+					},
+					'50%': {
+						boxShadow: '0 0 40px rgba(0, 245, 255, 0.8)'
+					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0px)'
+					},
+					'50%': {
+						transform: 'translateY(-20px)'
+					}
+				},
+				'slide-in-up': {
+					'0%': {
+						transform: 'translateY(100px)',
+						opacity: '0'
+					},
+					'100%': {
+						transform: 'translateY(0)',
+						opacity: '1'
+					}
+				},
+				'flip-card': {
+					'0%': {
+						transform: 'rotateY(0)'
+					},
+					'100%': {
+						transform: 'rotateY(180deg)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'glow-pulse': 'glow-pulse 2s ease-in-out infinite',
+				'float': 'float 6s ease-in-out infinite',
+				'slide-in-up': 'slide-in-up 0.6s ease-out',
+				'flip-card': 'flip-card 0.6s ease-in-out'
+			},
+			fontFamily: {
+				'orbitron': ['Orbitron', 'monospace'],
+			},
+			backdropBlur: {
+				xs: '2px',
 			}
 		}
 	},
